@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./components/App";
+import App from "./App";
 
 const DATA = [
   { id: "todo-0", name: "Pray", completed: true },
-  { id: "todo-1", name: "Exercie", completed: false },
+  { id: "todo-1", name: "Exercise", completed: false },
   { id: "todo-3", name: "Study", completed: false },
   { id: "todo-4", name: "Eat", completed: false },
   { id: "todo-5", name: "Repeat", completed: false },

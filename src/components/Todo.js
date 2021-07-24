@@ -1,13 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-
-// Custom hook declaration
-function usePrevious(value) {
-  const ref = useRef();
-
-  useEffect(() => (ref.current = value));
-
-  return ref.current;
-}
+import { usePrevious } from "../customHooks";
 
 export default function Todo({
   id,
@@ -17,6 +9,7 @@ export default function Todo({
   deleteTask,
   editTask,
 }) {
+  
   // Hooks
   const [isEditing, setEditing] = useState(false);
   const [newName, setNewName] = useState("");
